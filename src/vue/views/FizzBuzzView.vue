@@ -34,7 +34,7 @@
         </div>
       </div>
       
-      <div class="bg-zinc-900 text-white text-xs p-4 basis-2/5">
+      <div class="bg-zinc-900 text-white text-sm p-4 basis-2/5">
         <FizzBuzz class="grow" :start="state.start" :end="state.end" />
       </div>
     </section>

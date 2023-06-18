@@ -1,35 +1,21 @@
-# easyjet.technical-assessment
+# Easyjet Technical Assessment June 2023
 
-This template should help get you started developing with Vue 3 in Vite.
+Node: v18.16.x
+NPM: v9.5.x
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+## Project setup
+```bash
+# npm install
+npm ci # if you have a package-lock.json already generated
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+### Compiles and hot-reloads for development
+```bash
+npm start
+# npm run serve
 ```
 
-### Compile and Minify for Production
-
-```sh
+### Compiles and minifies for production
+```bash
 npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
