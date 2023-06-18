@@ -6,15 +6,15 @@
           <div class="bg-stone-700 bg-[url('../svg/clouds-tile.svg')] text-white basis-3/4 px-8 py-4 h-screen">
             <h1 class="text-4xl mb-4">Fizz Buzz</h1>
 
-            <p class="text-sm my-4">Write a program that can be given a start and end integer and iterate over every number in that range.</p>
+            <p class="my-4">Write a program that can be given a start and end integer and iterate over every number in that range.</p>
 
-            <ul class="text-sm list-disc list-outside pl-6 my-4">
+            <ul class="list-disc list-outside pl-6 my-4">
               <li>When the number is a multiple of three mark it as Fizz.</li>
               <li>When the number is a multiple of five mark it as Buzz.</li>
               <li>When a number is a multiple of three and five mark it as FizzBuzz.</li>
             </ul>
 
-            <p class="text-sm my-4">The program should show the list to the user when it is done.</p>
+            <p class="my-4">The program should show the list to the user when it is done.</p>
           </div>
 
           <div class="bg-orange-600 basis-1/4 px-8 py-4">
