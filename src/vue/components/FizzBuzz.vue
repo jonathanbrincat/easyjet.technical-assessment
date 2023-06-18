@@ -22,23 +22,48 @@
 
 <script setup>
 import { reactive, computed } from 'vue'
+import Numbers from '../../js/util/Numbers'
+
+const _ = new Numbers()
 
 const state = reactive({
-  start: 0,
-  end: 0,
+  start: 1,
+  end: 30,
 })
 
 const range = computed(() => {
-  const collection = [];
+  const collection = []
 
   for (let i = state.start; i <= state.end; i++) {
     collection.push({
       value: i,
-      verdict: this.fizzbuzz(i),
-    });
+      verdict: fizzBuzz(i),
+    })
   }
 
   return collection
 })
 
+function fizzBuzz(n) {
+  // if (_.is(n).multipleOf(3) && _.is(n).multipleOf(5)) {
+  //   return "FizzBuzz"
+  // } else if (_.is(n).multipleOf(5)) {
+  //   return "Buzz"
+  // } else if (_.is(n).multipleOf(3)) {
+  //   return "Fizz"
+  // } else {
+  //   return n
+  // }
+
+  switch (true) {
+    case _.is(n).multipleOf(15):
+      return 'FizzBuzz'
+    case _.is(n).multipleOf(5):
+      return "Buzz";
+    case _.is(n).multipleOf(3):
+      return "Fizz";
+    default:
+      return n;
+  }
+}
 </script>
