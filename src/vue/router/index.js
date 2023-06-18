@@ -1,19 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import FizzBuzzView from '../views/FizzBuzzView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'fizz-buzz',
+      component: FizzBuzzView,
+      alias: '/fizz-buzz'
     },
     {
-      path: '/fizz-buzz',
-      name: 'fizz-buzz',
-      component: () => import('../views/FizzBuzzView.vue')
-    }
+      path: '/knights-tour',
+      name: 'knights-tour',
+      component: () => import('../views/KnightsTourView.vue'),
+    },
+    {
+      path: '/craps',
+      name: 'craps',
+      component: () => import('../views/CrapsView.vue'),
+    },
   ]
 })
 
