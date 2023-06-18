@@ -14,7 +14,7 @@
 
     <ul>
       <li v-for="(number, index) in range" :key="index">
-        {{ number.value }} :: {{ number.verdict }}
+        {{ number.verdict }}
       </li>
     </ul>
   </div>
@@ -34,6 +34,14 @@ const state = reactive({
 const range = computed(() => {
   const collection = []
 
+  if (state.end - state.start > 10000) {
+    alert(
+      "Careful what you wish for! Sensible range restriction enforced to stop you running out of memory and your browser freaking out"
+    )
+
+    return []
+  }
+
   for (let i = state.start; i <= state.end; i++) {
     collection.push({
       value: i,
@@ -45,16 +53,6 @@ const range = computed(() => {
 })
 
 function fizzBuzz(n) {
-  // if (_.is(n).multipleOf(3) && _.is(n).multipleOf(5)) {
-  //   return "FizzBuzz"
-  // } else if (_.is(n).multipleOf(5)) {
-  //   return "Buzz"
-  // } else if (_.is(n).multipleOf(3)) {
-  //   return "Fizz"
-  // } else {
-  //   return n
-  // }
-
   switch (true) {
     case _.is(n).multipleOf(15):
       return 'FizzBuzz'
