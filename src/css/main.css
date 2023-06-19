@@ -20,6 +20,10 @@
 
 @layer components {
   .form__input {
-    @apply border-black border-solid bg-transparent border-2 rounded-sm px-2 py-1;
+    @apply border-black border-solid border-2 rounded-sm bg-transparent px-2 py-1;
+  }
+
+  .btn__primary {
+    @apply border-black border-solid border-2 rounded-sm bg-stone-600 text-white px-4 py-1 hover:bg-amber-400;
   }
 }

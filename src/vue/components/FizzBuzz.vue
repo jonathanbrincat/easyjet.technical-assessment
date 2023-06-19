@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { defineProps, computed } from 'vue'
+import { computed } from 'vue'
 import Numbers from '../../js/util/Numbers'
 
 const _ = new Numbers()

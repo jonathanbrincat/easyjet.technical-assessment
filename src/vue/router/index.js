@@ -10,11 +10,11 @@ const router = createRouter({
       component: FizzBuzzView,
       alias: '/fizz-buzz'
     },
-    {
-      path: '/knights-tour',
-      name: 'knights-tour',
-      component: () => import('../views/KnightsTourView.vue'),
-    },
+    // {
+    //   path: '/knights-tour',
+    //   name: 'knights-tour',
+    //   component: () => import('../views/KnightsTourView.vue'),
+    // },
     {
       path: '/craps',
       name: 'craps',

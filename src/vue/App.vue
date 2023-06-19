@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <nav class="grow flex gap-8">
         <RouterLink class="hover:text-amber-400" to="/fizz-buzz">Fizz Buzz</RouterLink>
-        <RouterLink class="hover:text-amber-400" to="/knights-tour">Knight's Tour</RouterLink>
+        <!-- <RouterLink class="hover:text-amber-400" to="/knights-tour">Knight's Tour</RouterLink> -->
         <RouterLink class="hover:text-amber-400" to="/craps">Craps</RouterLink>
       </nav>
     </div>

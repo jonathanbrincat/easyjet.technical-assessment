@@ -23,15 +23,34 @@
           </div>
 
           <div class="bg-orange-600 basis-1/4 px-8 py-4">
+            <p class="flex flex-row lg:flex-col gap-8 mb-4">
+              <label class="flex flex-col">
+                <span>How many games do you wish to play?</span>
+                <input class="form__input" type="number" v-model="state.games" />
+              </label>
+            </p>
+            <p class="my-4">
+              <button class="btn__primary" @click="craps.play(state.games)">Shoot!</button>
+            </p>
           </div>
         </div>
       </div>
       
       <div class="bg-zinc-900 text-white text-sm p-4 basis-2/5">
+        <Craps ref="craps" />
       </div>
     </section>
   </main>
 </template>
 
 <script setup>
+import { reactive, ref } from 'vue'
+import Craps from '../components/Craps.vue'
+
+const craps = ref(null)
+
+const state = reactive({
+  games: 10,
+})
+
 </script>
