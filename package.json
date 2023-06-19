@@ -2,7 +2,7 @@
   "name": "easyjet.technical-assessment",
   "version": "0.0.0",
   "private": true,
-  "author": "Jonathan Brincat <jb@pix8.co.uk> (https://pix8.co.uk/)"
+  "author": "Jonathan Brincat <jb@pix8.co.uk> (https://pix8.co.uk/)",
   "scripts": {
     "start": "vite",
     "dev": "vite",
