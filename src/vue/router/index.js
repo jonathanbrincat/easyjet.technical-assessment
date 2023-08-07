@@ -20,6 +20,7 @@ const router = createRouter({
       name: 'craps',
       component: () => import('../views/CrapsView.vue'),
     },
+    { path: '/:catchAll(.*)*', redirect: '/' },
   ]
 })
 
