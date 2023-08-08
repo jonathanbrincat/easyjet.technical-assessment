@@ -44,7 +44,7 @@ Each game the "shooter" rolls two dice. If the numbers on the dice add up to 2, 
 
 ---
 
-Node: v18.16.x
+Node: v18.16.x  
 NPM: v9.5.x
 
 ## Project setup
