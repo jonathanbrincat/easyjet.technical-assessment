@@ -4,7 +4,7 @@
 
 Choose **one** of the problems below and solve it using a C# console application. Once you are finished please zip your entire solution (include your name in the filename) and e-mail it back to your contact who will pass it on to us.
 
-> *Candidate notes: It turned out that Easyjet mail servers prohibit the delivery of zip file formats and so this demand was never achievable and would of unfairly undermined my ability to submit by the given deadline and reflected poorly. This is just shoddy and embarassing. Especially when you are being scrutinised on your own competency and ability. Ultimately I opted to overrule the requirement for a C# console application and host in GIT because I am a front-end web developer(and this was no secret).*
+> *Candidate notes: It turned out that Easyjet mail servers prohibit the delivery of zip file formats and so this demand was never achievable.*
 
 ### Fizz Buzz
 
